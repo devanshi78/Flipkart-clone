@@ -396,3 +396,14 @@ footer .social ul li a{
     height: 15px;
     width: 15px;
 }
+
+.phone-img img
+{
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+}
+
+.phone-img img:hover{
+    transform: scale(1.1);
+}
