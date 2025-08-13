@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+ul,ol{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+
+
+/* li{
+    padding: 16px;
+    text-align: center;
+} */
+
+/* header section start */
+
+.deal-header .input-group{
+    width: 50%;
+}
+
+.head-img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+header h5{
+    font-size: 14px;
+}
+
+.fa-chevron-down{
+    font-size: 12px;
+    padding-top: 3px;
+    margin-left: 5px;
+    color: #565656;
+}
+
+/* header section end */
+
+/* categories section start */
+
+.categories {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.categories span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+}
+
+.menu-item {
+    position: relative;
+    z-index: 10000;
+}
+
+.menu-item .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    gap: 40px; /* Space between left and right columns */
+    z-index: 9999;
+}
+
+.menu-item:hover .dropdown {
+    display: flex;
+}
+
+.dropdown-left,
+.dropdown-right {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.dropdown-left a,
+.dropdown-right a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.dropdown-left a:hover,
+.dropdown-right a:hover {
+    color: #007bff;
+}
+
+/* categories section end */
+
+/* slider section start */
+
+.carousel{
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.slider{
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    border-radius: 0 4px 4px 0;
+    background-color: #ffffff;
+    color: #565656;
+    padding: 24px 10px;
+    z-index: 10;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 12px;
+    border-radius: 4px 0 0 4px;
+    background-color: #ffffff;
+    color: #565656;
+    padding: 24px 10px;
+    z-index: 10;
+}
+
+/* slider section end */
+
+/* deals section start */
+
+.deals, .home{
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.title{
+    padding: 16px 12px;
+}
+
+.title h3{
+    font-size: 22px;
+    font-weight: 500px;
+}
+
+/* .deal-card, .home-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 240px;
+} */
+
+.deal-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+}
+
+.home-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    padding: 12px;
+}
+
+.deal-content span,.home-content span{
+    color: #1f1f1f;
+}
+
+.deal-content h6, .home-content h6{
+    color: #000000;
+}
+
+/* .deal-img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+.deal-img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+
+.deal-img img{
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+}
+
+.home-img img{
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+}
+
+/* .home-img{
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+} */
+
+.home-img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+
+/* deals section end */
+
+/* discount-1 section start */
+
+.discount-1 .row, .discount-2 .row, .discount-3{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.discount-1 a, .discount-2 a, .discount-3 a{
+    display: block;
+}
+
+/* discount-1 section end */
+
+/* menu-2 section start */
+
+.menu-2{
+    margin-bottom: 20px;
+}
+
+.menu-2 .card, .explore-now .card{
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.menu-2 .card .card-item, .explore-now .card-item{
+    border: 1px solid #e1e1e1;
+    border-radius: 3%;
+    padding: 12px;
+    margin: 5px;
+
+}
+
+.menu-2 .card .card-item h6, .explore-now .card .card-item h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.menu-2 .card .card-item span, .explore-now .card .card-item span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #108934;
+}
+
+.menu-2 .menu-img, .explore-now .explore-img{
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.shopnow-1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 567px;
+}
+
+/* menu-2 section end */
+
+/* explore-now section start */
+
+.explore-now{
+    margin-bottom: 20px;
+}
+
+.explore-now .img-exp{
+    width: auto;
+    height: 100%;
+}
+
+/* explore-now section end */
+
+/* deal-categories start */
+
+.deal-categories .row{
+    background-color: #ffffff;
+    padding-left: 0;
+    border-bottom: 1px solid #adadad;
+}   
+
+.deal-categories ul li a{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* deal-categories end */
+
+/* deal-home start */
+
+.fs-12{
+    font-size: 12px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+/* deal-home end */
+
+.deal-home .title,.deal-home ul,.deal-home .col-9{
+    background-color: #ffffff;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .06);
+}
+
+/* footer section start */
+
+footer h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #878787;
+    margin-bottom: 12px;
+}
+
+footer ul li a{
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+}
+
+footer .address p{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+footer .social ul li{
+    margin-right: 10px;
+}
+
+footer .social ul li a{
+    font-size: 20px;
+    color: white;
+}
+
+/* footer section end */
+
+.footer-bottom{
+    padding-top: 20px;
+}
+
+.footer-bottom ul li a{
+    color: #ffffff;
+}
+
+.footer-bottom ul li a img{
+    height: 15px;
+    width: 15px;
+}
